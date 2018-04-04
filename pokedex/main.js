@@ -48,15 +48,15 @@ class KevinKetchum {
 
     kevinKetchum.add(charmeleon)
 
-    name.innerHTML = charmeleon.name
-    attack.innerHTML = charmeleon.attack
-    defense.innerHTML = charmeleon.defense
-    abilities.innerHTML = [
+    name.innerHTML = "name:" + " " + charmeleon.name
+    attack.innerHTML = "attack:" + " " + charmeleon.attack
+    defense.innerHTML ="defense:" + " " + charmeleon.defense
+    abilities.innerHTML ="abilities:" + " " + [
       charmeleon.abilities[0].ability.name,
       charmeleon.abilities[1].ability.name,
       ]
 
-    hp.innerHTML = charmeleon.hp
+    hp.innerHTML = "hp:" + " " + charmeleon.hp
     data.innerHTML = charmeleon.data
 
     ul.appendChild(name)
@@ -92,15 +92,15 @@ class KevinKetchum {
 
       kevinKetchum.add(jigglypuff)
 
-      name.innerHTML = jigglypuff.name
-      attack.innerHTML = jigglypuff.attack
-      defense.innerHTML = jigglypuff.defense
-      abilities.innerHTML = [
+      name.innerHTML = "name:" + " " + jigglypuff.name
+      attack.innerHTML = "attack:" + " " + jigglypuff.attack
+      defense.innerHTML = "defense:" + " " + jigglypuff.defense
+      abilities.innerHTML = "abilities:" + " " + [
         jigglypuff.abilities[0].ability.name,
         jigglypuff.abilities[1].ability.name,
         jigglypuff.abilities[2].ability.name
       ]
-      hp.innerHTML = jigglypuff.hp
+      hp.innerHTML = "hp:" + " " + jigglypuff.hp
       data.innerHTML = jigglypuff.data
 
       ul.appendChild(name)
@@ -136,17 +136,15 @@ class KevinKetchum {
 
      kevinKetchum.add(meowth)
 
-     name.innerHTML = meowth.name
-     attack.innerHTML = meowth.attack
-     defense.innerHTML = meowth.defense
-     abilities.innerHTML = [
+     name.innerHTML = "name:" + " " + meowth.name
+     attack.innerHTML = "attack:" + " " + meowth.attack
+     defense.innerHTML = "defense:" + " " + meowth.defense
+     abilities.innerHTML = "abilities:" + " " + [
        meowth.abilities[0].ability.name,
        meowth.abilities[1].ability.name,
        meowth.abilities[2].ability.name,
-
      ]
-
-     hp.innerHTML = meowth.hp
+     hp.innerHTML ="hp:" + " " + meowth.hp
      data.innerHTML = meowth.data
 
      ul.appendChild(name)
