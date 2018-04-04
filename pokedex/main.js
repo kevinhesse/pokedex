@@ -28,7 +28,11 @@ class KevinKetchum {
   axios.get("https://pokeapi.co/api/v2/pokemon/5/")
   .then((response) => {
 
-    let li = document.createElement("li")
+    let name = document.createElement("li")
+    let attack = document.createElement("li")
+    let defense = document.createElement("li")
+    let abilities = document.createElement("li")
+    let hp= document.createElement("li")
     let data = response.data
 
 
@@ -42,7 +46,7 @@ class KevinKetchum {
 
     kevinKetchum.add(charmeleon)
 
-    li.innerHTML = charmeleon.name
+    hp.innerHTML = charmeleon.hp
     ul.appendChild(li)
 
     console.log()
@@ -70,7 +74,8 @@ class KevinKetchum {
 
      kevinKetchum.add(charmeleon)
 
-     li.innerHTML = charmeleon.name
+     li.innerHTML = charmeleon.attack
+     li.innerHTML = charmeleon.hp
      ul.appendChild(li)
 
      console.log()
@@ -106,7 +111,7 @@ class KevinKetchum {
     }).catch((error) => {
        console.log(error)
      })
-     
+
 //Charmeleon
 // axios.get("https://pokeapi.co/api/v2/pokemon/5/")
 // .then((response) => {
