@@ -51,7 +51,11 @@ class KevinKetchum {
     name.innerHTML = charmeleon.name
     attack.innerHTML = charmeleon.attack
     defense.innerHTML = charmeleon.defense
-    abilities.innerHTML = charmeleon.abilities
+    abilities.innerHTML = [
+      charmeleon.abilities[0].ability.name,
+      charmeleon.abilities[1].ability.name,
+      ]
+
     hp.innerHTML = charmeleon.hp
     data.innerHTML = charmeleon.data
 
@@ -91,7 +95,11 @@ class KevinKetchum {
       name.innerHTML = jigglypuff.name
       attack.innerHTML = jigglypuff.attack
       defense.innerHTML = jigglypuff.defense
-      abilities.innerHTML = jigglypuff.abilities.names
+      abilities.innerHTML = [
+        jigglypuff.abilities[0].ability.name,
+        jigglypuff.abilities[1].ability.name,
+        jigglypuff.abilities[2].ability.name
+      ]
       hp.innerHTML = jigglypuff.hp
       data.innerHTML = jigglypuff.data
 
@@ -131,7 +139,13 @@ class KevinKetchum {
      name.innerHTML = meowth.name
      attack.innerHTML = meowth.attack
      defense.innerHTML = meowth.defense
-     abilities.innerHTML = meowth.abilities
+     abilities.innerHTML = [
+       meowth.abilities[0].ability.name,
+       meowth.abilities[1].ability.name,
+       meowth.abilities[2].ability.name,
+
+     ]
+
      hp.innerHTML = meowth.hp
      data.innerHTML = meowth.data
 
