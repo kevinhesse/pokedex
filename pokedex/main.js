@@ -78,7 +78,7 @@ class KevinKetchum {
       let data = response.data
 
 
-      let charmeleon = new Pokemon(
+      let jigglypuff = new Pokemon(
         data.name,
         data.stats[4].base_stat,
         data.stats[3].base_stat,
@@ -86,14 +86,14 @@ class KevinKetchum {
         data.stats[5].base_stat
       )
 
-      kevinKetchum.add(charmeleon)
+      kevinKetchum.add(jigglypuff)
 
-      name.innerHTML = charmeleon.name
-      attack.innerHTML = charmeleon.attack
-      defense.innerHTML = charmeleon.defense
-      abilities.innerHTML = charmeleon.abilities
-      hp.innerHTML = charmeleon.hp
-      data.innerHTML = charmeleon.data
+      name.innerHTML = jigglypuff.name
+      attack.innerHTML = jigglypuff.attack
+      defense.innerHTML = jigglypuff.defense
+      abilities.innerHTML = jigglypuff.abilities.names
+      hp.innerHTML = jigglypuff.hp
+      data.innerHTML = jigglypuff.data
 
       ul.appendChild(name)
       ul.appendChild(attack)
@@ -118,8 +118,7 @@ class KevinKetchum {
      let hp= document.createElement("li")
      let data = response.data
 
-
-     let charmeleon = new Pokemon(
+     let meowth = new Pokemon(
        data.name,
        data.stats[4].base_stat,
        data.stats[3].base_stat,
@@ -127,14 +126,14 @@ class KevinKetchum {
        data.stats[5].base_stat
      )
 
-     kevinKetchum.add(charmeleon)
+     kevinKetchum.add(meowth)
 
-     name.innerHTML = charmeleon.name
-     attack.innerHTML = charmeleon.attack
-     defense.innerHTML = charmeleon.defense
-     abilities.innerHTML = charmeleon.abilities
-     hp.innerHTML = charmeleon.hp
-     data.innerHTML = charmeleon.data
+     name.innerHTML = meowth.name
+     attack.innerHTML = meowth.attack
+     defense.innerHTML = meowth.defense
+     abilities.innerHTML = meowth.abilities
+     hp.innerHTML = meowth.hp
+     data.innerHTML = meowth.data
 
      ul.appendChild(name)
      ul.appendChild(attack)
