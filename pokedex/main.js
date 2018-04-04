@@ -20,13 +20,15 @@ class KevinKetchum {
     }
   }
 
-  let ul = document.querySelector("ul")
+  // let ul = document.querySelector("ul")
   let kevinKetchum = new KevinKetchum()
 
 
   //Charmeleon
   axios.get("https://pokeapi.co/api/v2/pokemon/5/")
   .then((response) => {
+
+    let ul = document.querySelector("#char")
 
     let name = document.createElement("li")
     let attack = document.createElement("li")
@@ -59,70 +61,90 @@ class KevinKetchum {
     ul.appendChild(abilities)
     ul.appendChild(hp)
 
+  }).catch((error) => {
+     console.log(error)
+   })
 
-    console.log()
+    axios.get("https://pokeapi.co/api/v2/pokemon/jigglypuff/")
+    .then((response) => {
+
+      let ul = document.querySelector("#jiggly")
+
+      let name = document.createElement("li")
+      let attack = document.createElement("li")
+      let defense = document.createElement("li")
+      let abilities = document.createElement("li")
+      let hp= document.createElement("li")
+      let data = response.data
+
+
+      let charmeleon = new Pokemon(
+        data.name,
+        data.stats[4].base_stat,
+        data.stats[3].base_stat,
+        data.abilities,
+        data.stats[5].base_stat
+      )
+
+      kevinKetchum.add(charmeleon)
+
+      name.innerHTML = charmeleon.name
+      attack.innerHTML = charmeleon.attack
+      defense.innerHTML = charmeleon.defense
+      abilities.innerHTML = charmeleon.abilities
+      hp.innerHTML = charmeleon.hp
+      data.innerHTML = charmeleon.data
+
+      ul.appendChild(name)
+      ul.appendChild(attack)
+      ul.appendChild(defense)
+      ul.appendChild(abilities)
+      ul.appendChild(hp)
 
   }).catch((error) => {
      console.log(error)
    })
 
 
-   // //Jigglypuff
-   // axios.get("https://pokeapi.co/api/v2/pokemon/5/")
-   // .then((response) => {
-   //
-   //   let li = document.createElement("li")
-   //   let data = response.data
-   //
-   //
-   //   let charmeleon = new Pokemon(
-   //     data.name,
-   //     data.stats[4].base_stat,
-   //     data.stats[3].base_stat,
-   //     data.abilities,
-   //     data.stats[5].base_stat
-   //   )
-   //
-   //   kevinKetchum.add(charmeleon)
-   //
-   //   li.innerHTML = charmeleon.attack
-   //   li.innerHTML = charmeleon.hp
-   //   ul.appendChild(li)
-   //
-   //   console.log()
-   //
-   // }).catch((error) => {
-   //    console.log(error)
-   //  })
-   //
-   //
-   //  //Meowth
-   //  axios.get("https://pokeapi.co/api/v2/pokemon/5/")
-   //  .then((response) => {
-   //
-   //    let li = document.createElement("li")
-   //    let data = response.data
-   //
-   //
-   //    let charmeleon = new Pokemon(
-   //      data.name,
-   //      data.stats[4].base_stat,
-   //      data.stats[3].base_stat,
-   //      data.abilities,
-   //      data.stats[5].base_stat
-   //    )
-   //
-   //    kevinKetchum.add(charmeleon)
-   //
-   //    li.innerHTML = charmeleon.name
-   //    ul.appendChild(li)
-   //
-   //    console.log()
-   //
-   //  }).catch((error) => {
-   //     console.log(error)
-   //   })
+   axios.get("https://pokeapi.co/api/v2/pokemon/meowth/")
+   .then((response) => {
 
+     let ul = document.querySelector("#meowth")
+
+     let name = document.createElement("li")
+     let attack = document.createElement("li")
+     let defense = document.createElement("li")
+     let abilities = document.createElement("li")
+     let hp= document.createElement("li")
+     let data = response.data
+
+
+     let charmeleon = new Pokemon(
+       data.name,
+       data.stats[4].base_stat,
+       data.stats[3].base_stat,
+       data.abilities,
+       data.stats[5].base_stat
+     )
+
+     kevinKetchum.add(charmeleon)
+
+     name.innerHTML = charmeleon.name
+     attack.innerHTML = charmeleon.attack
+     defense.innerHTML = charmeleon.defense
+     abilities.innerHTML = charmeleon.abilities
+     hp.innerHTML = charmeleon.hp
+     data.innerHTML = charmeleon.data
+
+     ul.appendChild(name)
+     ul.appendChild(attack)
+     ul.appendChild(defense)
+     ul.appendChild(abilities)
+     ul.appendChild(hp)
+
+   }).catch((error) => {
+      console.log(error)
+    })
 //Charmeleon
 // axios.get("https://pokeapi.co/api/v2/pokemon/5/")
 // .then((response) => {
