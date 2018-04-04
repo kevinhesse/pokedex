@@ -46,8 +46,19 @@ class KevinKetchum {
 
     kevinKetchum.add(charmeleon)
 
+    name.innerHTML = charmeleon.name
+    attack.innerHTML = charmeleon.attack
+    defense.innerHTML = charmeleon.defense
+    abilities.innerHTML = charmeleon.abilities
     hp.innerHTML = charmeleon.hp
-    ul.appendChild(li)
+    data.innerHTML = charmeleon.data
+
+    ul.appendChild(name)
+    ul.appendChild(attack)
+    ul.appendChild(defense)
+    ul.appendChild(abilities)
+    ul.appendChild(hp)
+
 
     console.log()
 
@@ -56,61 +67,61 @@ class KevinKetchum {
    })
 
 
-   //Jigglypuff
-   axios.get("https://pokeapi.co/api/v2/pokemon/5/")
-   .then((response) => {
-
-     let li = document.createElement("li")
-     let data = response.data
-
-
-     let charmeleon = new Pokemon(
-       data.name,
-       data.stats[4].base_stat,
-       data.stats[3].base_stat,
-       data.abilities,
-       data.stats[5].base_stat
-     )
-
-     kevinKetchum.add(charmeleon)
-
-     li.innerHTML = charmeleon.attack
-     li.innerHTML = charmeleon.hp
-     ul.appendChild(li)
-
-     console.log()
-
-   }).catch((error) => {
-      console.log(error)
-    })
-
-
-    //Meowth
-    axios.get("https://pokeapi.co/api/v2/pokemon/5/")
-    .then((response) => {
-
-      let li = document.createElement("li")
-      let data = response.data
-
-
-      let charmeleon = new Pokemon(
-        data.name,
-        data.stats[4].base_stat,
-        data.stats[3].base_stat,
-        data.abilities,
-        data.stats[5].base_stat
-      )
-
-      kevinKetchum.add(charmeleon)
-
-      li.innerHTML = charmeleon.name
-      ul.appendChild(li)
-
-      console.log()
-
-    }).catch((error) => {
-       console.log(error)
-     })
+   // //Jigglypuff
+   // axios.get("https://pokeapi.co/api/v2/pokemon/5/")
+   // .then((response) => {
+   //
+   //   let li = document.createElement("li")
+   //   let data = response.data
+   //
+   //
+   //   let charmeleon = new Pokemon(
+   //     data.name,
+   //     data.stats[4].base_stat,
+   //     data.stats[3].base_stat,
+   //     data.abilities,
+   //     data.stats[5].base_stat
+   //   )
+   //
+   //   kevinKetchum.add(charmeleon)
+   //
+   //   li.innerHTML = charmeleon.attack
+   //   li.innerHTML = charmeleon.hp
+   //   ul.appendChild(li)
+   //
+   //   console.log()
+   //
+   // }).catch((error) => {
+   //    console.log(error)
+   //  })
+   //
+   //
+   //  //Meowth
+   //  axios.get("https://pokeapi.co/api/v2/pokemon/5/")
+   //  .then((response) => {
+   //
+   //    let li = document.createElement("li")
+   //    let data = response.data
+   //
+   //
+   //    let charmeleon = new Pokemon(
+   //      data.name,
+   //      data.stats[4].base_stat,
+   //      data.stats[3].base_stat,
+   //      data.abilities,
+   //      data.stats[5].base_stat
+   //    )
+   //
+   //    kevinKetchum.add(charmeleon)
+   //
+   //    li.innerHTML = charmeleon.name
+   //    ul.appendChild(li)
+   //
+   //    console.log()
+   //
+   //  }).catch((error) => {
+   //     console.log(error)
+   //   })
 
 //Charmeleon
 // axios.get("https://pokeapi.co/api/v2/pokemon/5/")
