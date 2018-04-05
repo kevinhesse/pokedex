@@ -6,7 +6,7 @@ class KevinKetchum {
   }
   add(pokemon) {
     this.all.push(pokemon)
-    //adds and pushes needed api info
+  //adds and pushes needed api info
    }
   }
 
@@ -20,7 +20,7 @@ class KevinKetchum {
     }
   }
 
-  // let ul = document.querySelector("ul")
+  let ul = document.querySelector("ul")
   let kevinKetchum = new KevinKetchum()
 
 
@@ -52,9 +52,8 @@ class KevinKetchum {
     attack.innerHTML = "attack:" + " " + charmeleon.attack
     defense.innerHTML ="defense:" + " " + charmeleon.defense
     abilities.innerHTML ="abilities:" + " " + [
-      charmeleon.abilities[0].ability.name,
-      charmeleon.abilities[1].ability.name,
-      ]
+      charmeleon.abilities[0].ability.name] + "\n" +
+      [charmeleon.abilities[1].ability.name]
 
     hp.innerHTML = "hp:" + " " + charmeleon.hp
     data.innerHTML = charmeleon.data
@@ -69,6 +68,7 @@ class KevinKetchum {
      console.log(error)
    })
 
+    //jigglypuff
     axios.get("https://pokeapi.co/api/v2/pokemon/jigglypuff/")
     .then((response) => {
 
@@ -95,11 +95,11 @@ class KevinKetchum {
       name.innerHTML = "name:" + " " + jigglypuff.name
       attack.innerHTML = "attack:" + " " + jigglypuff.attack
       defense.innerHTML = "defense:" + " " + jigglypuff.defense
-      abilities.innerHTML = "abilities:" + " " + [
-        jigglypuff.abilities[0].ability.name,
-        jigglypuff.abilities[1].ability.name,
-        jigglypuff.abilities[2].ability.name
-      ]
+      abilities.innerHTML = "abilities:" + " " +
+        [jigglypuff.abilities[0].ability.name] +"\n"+
+        [jigglypuff.abilities[1].ability.name] +"\n"+
+        [jigglypuff.abilities[2].ability.name]
+
       hp.innerHTML = "hp:" + " " + jigglypuff.hp
       data.innerHTML = jigglypuff.data
 
@@ -113,7 +113,7 @@ class KevinKetchum {
      console.log(error)
    })
 
-
+   //meowth
    axios.get("https://pokeapi.co/api/v2/pokemon/meowth/")
    .then((response) => {
 
@@ -139,11 +139,14 @@ class KevinKetchum {
      name.innerHTML = "name:" + " " + meowth.name
      attack.innerHTML = "attack:" + " " + meowth.attack
      defense.innerHTML = "defense:" + " " + meowth.defense
-     abilities.innerHTML = "abilities:" + " " + [
-       meowth.abilities[0].ability.name,
-       meowth.abilities[1].ability.name,
-       meowth.abilities[2].ability.name,
-     ]
+     abilities.innerHTML = "abilities:" + " " +
+     [meowth.abilities[0].ability.name] + "\n" +
+     [meowth.abilities[1].ability.name] + "\n" +
+     [meowth.abilities[2].ability.name]
+     // response.data.abilities.forEach(ability => {
+     //  console.log(ability.ability.name)
+     // })
+
      hp.innerHTML ="hp:" + " " + meowth.hp
      data.innerHTML = meowth.data
 
@@ -153,86 +156,10 @@ class KevinKetchum {
      ul.appendChild(abilities)
      ul.appendChild(hp)
 
+     // response.data.abilities.forEach(ability => {
+     //  console.log(ability.ability.name)
+     // })
+
    }).catch((error) => {
       console.log(error)
     })
-//Charmeleon
-// axios.get("https://pokeapi.co/api/v2/pokemon/5/")
-// .then((response) => {
-//   let data = response.data
-//   let kevinKetchum = new KevinKetchum()
-//
-//   let name = document.createElement("li")
-//   name.innerHTML = data.name
-//   pokeOne.appendChild(name)
-//
-//   let attack = document.createElement("li")
-//   attack.innerHTML = data.stats[4].base_stat
-//   pokeOne.appendChild(attack)
-//
-//   let defense = document.createElement("li")
-//   defense.innerHTML = data.stats[3].base_stat
-//   pokeOne.appendChild(defense)
-//
-//   let abilities = document.createElement("li")
-//   abilities.innerHTML = data.abilities
-//   pokeOne.appendChild(abilities)
-//
-//   let hp = document.createElement("li")
-//   hp.innerHTML = data.stats[5].base_stat
-//   pokeOne.appendChild(hp)
-//   })
-//
-// //Jigglypuff
-// axios.get("https://pokeapi.co/api/v2/pokemon/jigglypuff/")
-// .then((response)=> {
-//   let data = response.data
-//
-//   let name = document.createElement("li")
-//   name.innerHTML = data.name
-//   pokeTwo.appendChild(name)
-//
-//   let attack = document.createElement("li")
-//   attack.innerHTML = data.stats[4].base_stat
-//   pokeTwo.appendChild(attack)
-//
-//   let defense = document.createElement("li")
-//   defense.innerHTML = data.stats[3].base_stat
-//   pokeTwo.appendChild(defense)
-//
-//   let abilities = document.createElement("li")
-//   abilities.innerHTML = data.abilities
-//   pokeTwo.appendChild(abilities)
-//
-//   let hp = document.createElement("li")
-//   hp.innerHTML = data.stats[5].base_stat
-//   pokeTwo.appendChild(hp)
-//   })
-//
-// //Meowth
-// axios.get("https://pokeapi.co/api/v2/pokemon/meowth/")
-// .then((response) => {
-//   let data = response.data
-//
-//   let name = document.createElement("li")
-//   name.innerHTML = data.name
-//   pokeThree.appendChild(name)
-//
-//   let attack = document.createElement("li")
-//   attack.innerHTML = data.stats[4].base_stat
-//   pokeThree.appendChild(attack)
-//
-//   let defense = document.createElement("li")
-//   defense.innerHTML = data.stats[3].base_stat
-//   pokeThree.appendChild(defense)
-//
-//   let abilities = document.createElement('li')
-//   abilities.innerHTML = data.abilities.ability
-//   pokeThree.appendChild(abilities)
-//
-//   let hp = document.createElement("li")
-//   hp.innerHTML = data.stats[5].base_stat
-//   pokeThree.appendChild(hp)
-//   })
-
-// console.log(KevinKetchum)

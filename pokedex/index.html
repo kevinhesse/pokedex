@@ -2,10 +2,10 @@
 <html>
 
 <head>
-  <link href="main.css" rel="stylesheet">
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
   <!--font form google fonts-->
   <title>Pokedex</title>
 </head>
@@ -17,133 +17,77 @@
     Kevin Ketchum's Trainer Gym
   </div>
 </div>
-<!--
-<body>
-  <div class="container valign-wrapper">
-    <div class="row">
-      <div class="col s12 m4 ">
-        <div class="card">
-          <div class="card-image">
-            <img src="005Charmeleon.png">
-            <span class="card-title black-text">Charmeleon</span>
-          </div>
-          <div class="card-content">
-            <p>
-              <ul id=char>
 
-              </ul>
-            </p>
-          </div>
-          <div class="card-action">
-          </div>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="005charmeleon.png">
+          <!--image from https://bulbagarden.net/-->
         </div>
-      </div>
-
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="jigglypuff.png">
-            <span class="card-title black-text ">Jigglypuff</span>
-          </div>
-          <div class="card-content">
-            <p>
-              <ul id="jiggly">
-
-              </ul>
-            </p>
-          </div>
-          <div class="card-action">
-          </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Charmeleon</span>
+          <p><a href="#">I choose you!</a></p>
         </div>
-      </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Stats:<i class="material-icons right">x</i></span>
+          <p>
+            <ul id="char">
 
-      <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="meowth.png">
-            <span class="text-wrap card-title black-text">Meowth</span>
-          </div>
-          <div class="card-content">
-            <p>
-              <ul id="meowth">
-              </ul>
-            </p>
-          </div>
-          <div class="card-action">
-          </div>
+            </ul>
+          </p>
         </div>
       </div>
     </div>
-  </div> -->
-<div class ="container">
-<div class ="row">
-<div class="col s4 m4">
-  <div class="card">
-   <div class="card-image waves-effect waves-block waves-light">
-     <img class="activator" src="005charmeleon.png">
-   </div>
-   <div class="card-content">
-     <span class="card-title activator grey-text text-darken-4">Charmeleon<i class="material-icons right"></i></span>
-     <p><a href="#">I choose you!</a></p>
-   </div>
-   <div class="card-reveal">
-     <span class="card-title grey-text text-darken-4">Stats:<i class="material-icons right">x</i></span>
-     <p>
-       <ul id="char">
 
-      </ul>
-     </p>
-   </div>
- </div>
-</div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="jigglypuff.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Jigglypuff<i class="material-icons right"></i></span>
+          <p><a href="#">I choose you!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Stats:<i class="material-icons right">x</i></span>
+          <p>
+            <ul id="jiggly">
 
-<div class="col s4 m4">
-  <div class="card">
-   <div class="card-image waves-effect waves-block waves-light">
-     <img class="activator" src="jigglypuff.png">
-   </div>
-   <div class="card-content">
-     <span class="card-title activator grey-text text-darken-4">Jigglypuff<i class="material-icons right"></i></span>
-     <p><a href="#">I choose you!</a></p>
-   </div>
-   <div class="card-reveal">
-     <span class="card-title grey-text text-darken-4">Stats:<i class="material-icons right">x</i></span>
-     <p>
-       <ul id="jiggly">
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
 
-      </ul>
-     </p>
-   </div>
- </div>
-</div>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="meowth.png">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Meowth<i class="material-icons right"></i></span>
+          <p><a href="#">I choose you!</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Stats:<i class="material-icons right">x</i></span>
+          <p>
+            <ul id="meowth">
 
-<div class="col s4 m4">
-  <div class="card">
-   <div class="card-image waves-effect waves-block waves-light">
-     <img class="activator" src="meowth.png">
-   </div>
-   <div class="card-content">
-     <span class="card-title activator grey-text text-darken-4">Meowth<i class="material-icons right"></i></span>
-     <p><a href="#">I choose you!</a></p>
-   </div>
-   <div class="card-reveal">
-     <span class="card-title grey-text text-darken-4">Stats:<i class="material-icons right">x</i></span>
-     <p>
-       <ul id="meowth">
-
-      </ul>
-     </p>
-   </div>
- </div>
-</div>
-</div>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="main.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
 </body>
 
 </html>
