@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,SAAU;EACR,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,MAAM;;AAGpB,IAAK;EACH,WAAW,EAPP,yBAAyB;EAS7B,gBAAgB,EAAE,KAAK;;AAGzB,KAAK;EACH,WAAW,EAAE,KAAK;;AAGpB,iBAAkB;EAChB,SAAS,EAAE,GAAG",
+"sources": ["shiny_main.scss"],
+"names": [],
+"file": "shiny_main.css"
+}

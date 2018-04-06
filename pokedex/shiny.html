@@ -7,7 +7,7 @@
   <!-- materialize link -->
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <!--font form google fonts-->
-  <link href="main.css" rel="stylesheet">
+  <link href="shiny-main.css" rel="stylesheet">
   <link href="game.png" rel ="title-icon">
   <!-- inspiration from rachel -->
   <title>Pokedex</title>
@@ -16,7 +16,7 @@
 
 <!-- header -->
 <div class="z-depth-3 row">
-  <div class="flow-text col s12 m12 center red">
+  <div class="flow-text col s12 m12 center yellow">
     <header id=heading>Kevin Ketchum's Trainer Gym</header>
   </div>
 </div>
@@ -26,7 +26,7 @@
     <div class="col s12 m4">
       <div class="card">
         <div class=" card-image waves-effect waves-block waves-light">
-          <img class="activator" src="005charmeleon.png">
+          <img class="shiny" class="activator" src="shiny_char.png">
           <!--image from https://bulbagarden.net/-->
         </div>
         <div class="card-content ">
@@ -48,7 +48,7 @@
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="jigglypuff.png">
+          <img class="shiny" class="activator" src="shiny_jiggly.png">
           <!--image from https://bulbagarden.net/-->
         </div>
         <div class="card-content">
@@ -69,7 +69,7 @@
     <div class="col s12 m4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="meowth.png">
+          <img class="shiny" class="activator" src="meowth_Alola.png">
           <!--image from https://bulbagarden.net/-->
         </div>
         <div class="card-content">
@@ -93,18 +93,19 @@
 <div class="switch">
   <label>
     Off
-    <input id="button" type="checkbox">
+    <input id="button" type="checkbox" checked>
     <span class="lever"></span>
     On
   </label>
 </div>
-
+<p id="shiny-mode"> Shiny Mode Activated! </p>
 <!-- Disabled Switch -->
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
+<script src="shiny-main.js"></script>
 </body>
 
 </html>

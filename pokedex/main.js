@@ -158,3 +158,16 @@ get(name) {
    }).catch((error) => {
       console.log(error)
     })
+
+    //button click event
+  let button = document.getElementById("button")
+  button.addEventListener("click", event => {
+    window.location.href = "shiny.html"
+  })
+
+  function myFunction(event) {
+      var x = event.keyCode;
+      if (x == 27) {  // 27 is the ESC key
+          alert ("You pressed the Escape key!");
+      }
+  }

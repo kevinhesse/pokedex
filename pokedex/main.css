@@ -7,7 +7,7 @@ body {
   background-image: url("background.png"); }
 
 .card {
-  margin-top: 5.5em; }
+  padding-top: 5.5em; }
 
 .card .card-title {
   font-size: 1em; }
