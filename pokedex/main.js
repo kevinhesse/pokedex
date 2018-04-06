@@ -12,9 +12,7 @@ class KevinKetchum {
 get(name) {
   return this.all.find(pokemon => pokemon.name == name)
   }
-
 }
-
 
   class Pokemon {
     constructor(name, attack, defense, abilities,hp) {
@@ -29,20 +27,17 @@ get(name) {
   let ul = document.querySelector("ul")
   let kevinKetchum = new KevinKetchum()
 
-
   //Charmeleon
   axios.get("https://pokeapi.co/api/v2/pokemon/5/")
   .then((response) => {
 
     let ul = document.querySelector("#char")
-
     let name = document.createElement("li")
     let attack = document.createElement("li")
     let defense = document.createElement("li")
     let abilities = document.createElement("li")
     let hp= document.createElement("li")
     let data = response.data
-
 
     let charmeleon = new Pokemon(
       data.name,
@@ -57,8 +52,8 @@ get(name) {
     name.innerHTML = "name:" + " " + charmeleon.name
     attack.innerHTML = "attack:" + " " + charmeleon.attack
     defense.innerHTML ="defense:" + " " + charmeleon.defense
-    abilities.innerHTML ="abilities:" + " " + [
-      charmeleon.abilities[0].ability.name] + "\n" +
+    abilities.innerHTML ="abilities:" + " " +
+      [charmeleon.abilities[0].ability.name] + "\n" +
       [charmeleon.abilities[1].ability.name]
 
     hp.innerHTML = "hp:" + " " + charmeleon.hp
@@ -149,9 +144,6 @@ get(name) {
      [meowth.abilities[0].ability.name] + "\n" +
      [meowth.abilities[1].ability.name] + "\n" +
      [meowth.abilities[2].ability.name]
-     // response.data.abilities.forEach(ability => {
-     //  console.log(ability.ability.name)
-     // })
 
      hp.innerHTML ="hp:" + " " + meowth.hp
      data.innerHTML = meowth.data
@@ -162,23 +154,6 @@ get(name) {
      ul.appendChild(abilities)
      ul.appendChild(hp)
 
-     // response.data.abilities.forEach(ability => {
-     //  console.log(ability.ability.name)
-     // })
-
    }).catch((error) => {
       console.log(error)
     })
-
-
-    // response.data.abilities.forEach(ability => {
-    //  console.log(ability.ability.name)
-    // })
-    //
-    // let finder = this.all.find(function(name) {
-    //   return name;
-    // })
-
-
-
-    // KevinKetchum.get(charmeleon)
