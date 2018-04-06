@@ -160,14 +160,14 @@ get(name) {
     })
 
     //button click event
-  let button = document.getElementById("button")
+  let button = document.querySelector(".shiny-button")
   button.addEventListener("click", event => {
     window.location.href = "shiny.html"
-  })
 
-  function myFunction(event) {
-      var x = event.keyCode;
-      if (x == 27) {  // 27 is the ESC key
-          alert ("You pressed the Escape key!");
-      }
-  }
+})
+
+    let buttonTwo = document.querySelector(".gym-button")
+    buttonTwo.addEventListener("click", event => {
+      window.location.href = "index.html"
+  console.log("i work")
+  })

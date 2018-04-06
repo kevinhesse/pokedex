@@ -8,7 +8,8 @@ body {
   animation: fadeIn 2s; }
 
 .card {
-  padding-top: 5.5em; }
+  margin-top: 3.8em;
+  padding-top: 2em; }
 
 .card .card-title {
   font-size: 1em; }
@@ -18,23 +19,23 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@keyframes blink {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 header {
-  color: red; }
+  color: grey; }
 
 .shiny {
   width: 80px;
-  height: 270px; }
+  height: 275px; }
 
 #shiny-mode {
   text-align: center;
   color: yellow;
   font-size: 22px;
-  animation: blink 2s;
-  animation: blink 2s; }
+  animation: fadeIn 4s; }
+
+#home {
+  margin-left: 20px; }
+
+#home:hover {
+  color: grey; }
 
 /*# sourceMappingURL=shiny-main.css.map */
