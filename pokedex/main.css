@@ -3,8 +3,12 @@
   text-align: center; }
 
 body {
-  font-family: 'Press Start 2P', cursive;
-  background-color: lightgrey; }
+  font-family: "Press Start 2P", cursive;
+  background-color: lightgrey;
+  background-image: url("background.png"); }
+
+.card {
+  margin-top: 5.5em; }
 
 .card .card-title {
   font-size: 1em; }

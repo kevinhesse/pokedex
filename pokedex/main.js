@@ -7,8 +7,14 @@ class KevinKetchum {
   add(pokemon) {
     this.all.push(pokemon)
   //adds and pushes needed api info
-   }
+}
+
+get(name) {
+  return this.all.find(pokemon => pokemon.name == name)
   }
+
+}
+
 
   class Pokemon {
     constructor(name, attack, defense, abilities,hp) {
@@ -163,3 +169,16 @@ class KevinKetchum {
    }).catch((error) => {
       console.log(error)
     })
+
+
+    // response.data.abilities.forEach(ability => {
+    //  console.log(ability.ability.name)
+    // })
+    //
+    // let finder = this.all.find(function(name) {
+    //   return name;
+    // })
+
+
+
+    // KevinKetchum.get(charmeleon)
