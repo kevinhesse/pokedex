@@ -11,6 +11,7 @@ class KevinKetchum {
 
 get(name) {
   return this.all.find(pokemon => pokemon.name == name)
+  //help from mariia
   }
 }
 
