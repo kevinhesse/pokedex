@@ -1,0 +1,25 @@
+
+$font:'Press Start 2P', cursive ;
+#navTitle {
+  font-size: 2.3em;
+  text-align: center;
+}
+
+body {
+  font-family: $font;
+  background-image: url("background.png");
+}
+
+.card{
+  margin-top: 3.8em;
+  padding-top: 2em;
+}
+
+.card .card-title {
+  font-size: 1em;
+}
+
+.shiny-button{
+  height: 50px;
+margin-top: 115px;
+}
