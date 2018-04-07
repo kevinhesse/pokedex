@@ -158,15 +158,8 @@ get(name) {
       console.log(error)
     })
 
-    //button click event
+  //button click event
   let button = document.querySelector(".shiny-button")
   button.addEventListener("click", event => {
     window.location.href = "shiny.html"
-
 })
-
-    let buttonTwo = document.querySelector(".gym-button")
-    buttonTwo.addEventListener("click", event => {
-      window.location.href = "index.html"
-  console.log("i work")
-  })
